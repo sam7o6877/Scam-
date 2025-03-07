@@ -14,6 +14,11 @@
         <button>Generate Robux</button>
         <div class="robux-image">
             <img src="robux.png" alt="Robux">
+
+        </div>
+    </div>
+</body>
+</html>
 body {
     background-color: #f8d3ff; /* Light purple background */
     font-family: Arial, sans-serif;
@@ -58,7 +63,3 @@ button {
     width: 200px;
     margin-top: 20px;
 }
-        </div>
-    </div>
-</body>
-</html>
