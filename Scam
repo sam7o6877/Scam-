@@ -33,6 +33,9 @@
         // Simple JavaScript to simulate the "Generate Robux" button
         function generateRobux() {
             alert("Robux generation complete!);
+git add .
+git commit -m "Update index.html and style.css"
+git push origin main
         }
     </script>
 </body>
