@@ -2,8 +2,14 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f4f4f4;
+    height: 100%; /* Ensure the page takes full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Allow scrolling if content exceeds viewport */
 }
 
 .container {
@@ -12,9 +18,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
-    margin: auto;
+    margin: 20px;
     display: flex;
-    flex-direction: column; /* Change this to make items stack vertically */
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
 }
@@ -37,7 +43,7 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px; /* Space between button and disclaimer */
+    margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -48,4 +54,11 @@ h2 {
     font-size: 10px;
     color: gray;
     margin-top: 10px;
+}
+
+/* Add some content below to make the page longer */
+.extra-content {
+    height: 1500px; /* Add height to make the page scrollable */
+    background-color: #e0e0e0;
+    margin-top: 50px;
 }
