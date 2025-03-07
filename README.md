@@ -1,4 +1,3 @@
-# Scam-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +27,7 @@
         <p>Disclaimer: This is a mock-up for educational purposes.</p>
     </footer>
 </body>
-</html>body {
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -62,3 +61,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+</html>
