@@ -4,45 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Robux Generator</title>
+    <title>Robux Generator - Get Free Robux Now!</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Get free Robux instantly! Generate your Robux with our simple and easy-to-use generator." />
 </head>
 
 <body>
-    <!-- Main container -->
-    <div class="container">
+    <!-- Main Container -->
+    <div class="main-container">
         <div class="header">
+            <img src="images/robux_logo.png" alt="Robux Logo" class="logo">
             <h1>Robux Generator</h1>
-            <img src="images/robux_logo.png" alt="Robux Logo" class="robux-logo">
+            <p class="sub-header">100% Legit, Get Free Robux Instantly!</p>
         </div>
 
         <div class="content">
-            <p class="intro-text">Get free Robux instantly! Simply click the button to generate your free Robux.</p>
-
-            <!-- Robux Counter -->
-            <div class="robux-counter">
-                <p class="robux">Generated Robux: <span id="robuxAmount">0</span></p>
+            <p class="description">Welcome to the best Robux Generator. Click below to generate Robux instantly for your Roblox account. It's fast, simple, and free.</p>
+            
+            <!-- Robux Display Section -->
+            <div class="robux-display">
+                <p class="robux-text">You have <span id="robuxAmount">0</span> Robux!</p>
             </div>
-
-            <!-- Generate Button -->
+            
+            <!-- Button Section -->
             <button class="generate-btn" onclick="generateRobux()">Generate Robux</button>
+        </div>
+
+        <div class="footer">
+            <p>By using this site, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a>.</p>
         </div>
 
         <!-- Disclaimer Section -->
         <div class="disclaimer">
-            <p>Disclaimer: For educational purposes only. No real Robux will be generated.</p>
+            <p>Disclaimer: This is a fictional Robux generator for educational purposes only. No real Robux are given.</p>
         </div>
-
-        <!-- Footer with links -->
-        <footer>
-            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
-        </footer>
     </div>
 
-    <!-- JavaScript to simulate generating Robux -->
     <script>
         function generateRobux() {
-            let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux generation
+            let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux Generation
             document.getElementById("robuxAmount").innerText = randomRobux;
         }
     </script>
