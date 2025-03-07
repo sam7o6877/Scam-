@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="style.css">/* Set a background color and fun font for the page */
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+<link rel="stylesheet" href="style.css"> 
+content="width=device-width, initial-scale=1.0">
+    /* Set a background color and fun font for the page */
 body {
   background-color: #f8d3ff; /* light purple background for a fun feel */
   font-family: 'Comic Sans MS', sans-serif; /* fun font for the website */
@@ -79,10 +84,7 @@ img:hover {
   color: #333;
   font-size: 1.2em;
   margin-bottom: 10px;
-}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get free Robux instantly!">
+}<meta name="description" content="Get free Robux instantly!">
     <title>Free Robux Generator - Get Robux Now!</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
@@ -103,16 +105,11 @@ img:hover {
     </section>
 
     <footer>
-        <
+        <p>Disclaimer: This is a mock-up for educational purposes.</p>
     </footer>
 </body>
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0; git add .
-git commit -m "Update index.html and style.css"
-git push origin main
- git add .
-git commit -m "Update index.html and style.css"
-git push origin main
+    padding: 0;
