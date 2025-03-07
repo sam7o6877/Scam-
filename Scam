@@ -26,16 +26,13 @@
     <section class="robux-image">
         <h3>Robux Prize</h3>
         <img src="robux.png" alt="Robux Image">
-    </section>
     
-    <footer>
-        <p>Disclaimer: This website is a mock-up and not affiliated with Roblox.</p>
-    </footer>
+
 
     <script>
         // Simple JavaScript to simulate the "Generate Robux" button
         function generateRobux() {
-            alert("Robux generation complete! (This is a mock-up, no actual Robux given)");
+            alert("Robux generation complete!);
         }
     </script>
 </body>
