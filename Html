@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Robux Generator</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+        .robux {
+            font-size: 20px;
+            color: green;
+            margin: 15px 0;
+        }
+        .btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .disclaimer {
+            font-size: 8px;
+            color: gray;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Free Robux Generator</h1>
-        <p>Enter your Roblox username below to generate free Robux instantly!</p>
-    </header>
-    
-    <section class="form-section">
-        <h2>Enter Your Username</h2>
-        <input type="text" placeholder="Roblox Username" id="username">
-        <button onclick="generateRobux()">Generate Robux</button>
-    </section>
 
-    <section class="robux-info">
-        <h3>How it works</h3>
-        <p>Simply enter your Roblox username, and you'll receive Robux immediately after the process completes!</p>
-    </section>
+<div class="container">
+    <h2>Robux Generator</h2>
+    <p class="robux">Generated Robux: 0</p>
+    <button class="btn">Generate Robux</button>
+    <p class="disclaimer">For educational purposes only.</p>
+</div>
 
-    <section class="robux-image">
-        <h3>Robux Prize</h3>
-        <img src="robux.png" alt="Robux Image">
-    </section>
-    
-    <footer>
-        <p>Disclaimer: This website is a mock-up and not affiliated with Roblox.</p>
-    </footer>
+<script>
+    document.querySelector(".btn").addEventListener("click", function() {
+        let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux generation
+        document.querySelector(".robux").innerText = "Generated Robux: " + randomRobux;
+    });
+</script>
 
-    <script>
-        // Simple JavaScript to simulate the "Generate Robux" button
-        function generateRobux() {
-            alert("Robux generation complete! (This is a mock-up, no actual Robux given)");
-        }
-    </script>
 </body>
 </html>
