@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Robux Generator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Get Free Robux Now!</h1>
+        <p>Enter your Roblox username below to generate free Robux.</p>
+        
+        <input type="text" placeholder="Enter your username">
+        <button>Generate Robux</button>
+        
+        <div class="robux-image">
+            <img src="robux.png" alt="Robux">
+        </div>
+    </div>
+</body>
+</html>   
