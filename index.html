@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Robux Generator</title>
-    
-    <!-- Correct link to the external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Main container -->
+    <div class="container">
+        <div class="header">
+            <h1>Robux Generator</h1>
+            <img src="images/robux_logo.png" alt="Robux Logo" class="robux-logo">
+        </div>
 
-<div class="container">
-    <h2>Robux Generator</h2>
-    <p class="robux">Generated Robux: 0</p>
-    <button class="btn">Generate Robux</button>
-    <p class="disclaimer">For educational purposes only.</p>
-</div>
+        <div class="content">
+            <p class="intro-text">Get free Robux instantly! Simply click the button to generate your free Robux.</p>
 
-<script>
-    document.querySelector(".btn").addEventListener("click", function() {
-        let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux generation
-        document.querySelector(".robux").innerText = "Generated Robux: " + randomRobux;
-    });
-</script>
+            <!-- Robux Counter -->
+            <div class="robux-counter">
+                <p class="robux">Generated Robux: <span id="robuxAmount">0</span></p>
+            </div>
 
+            <!-- Generate Button -->
+            <button class="generate-btn" onclick="generateRobux()">Generate Robux</button>
+        </div>
+
+        <!-- Disclaimer Section -->
+        <div class="disclaimer">
+            <p>Disclaimer: For educational purposes only. No real Robux will be generated.</p>
+        </div>
+
+        <!-- Footer with links -->
+        <footer>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+        </footer>
+    </div>
+
+    <!-- JavaScript to simulate generating Robux -->
+    <script>
+        function generateRobux() {
+            let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux generation
+            document.getElementById("robuxAmount").innerText = randomRobux;
+        }
+    </script>
 </body>
+
 </html>
