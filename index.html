@@ -1,51 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robux Generator - Get Free Robux Now!</title>
+    <title>Free Robux Generator</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Get free Robux instantly! Generate your Robux with our simple and easy-to-use generator." />
-</head>
-
-<body>
-    <!-- Main Container -->
-    <div class="main-container">
-        <div class="header">
-            <img src="images/robux_logo.png" alt="Robux Logo" class="logo">
-            <h1>Robux Generator</h1>
-            <p class="sub-header">100% Legit, Get Free Robux Instantly!</p>
-        </div>
-
-        <div class="content">
-            <p class="description">Welcome to the best Robux Generator. Click below to generate Robux instantly for your Roblox account. It's fast, simple, and free.</p>
-            
-            <!-- Robux Display Section -->
-            <div class="robux-display">
-                <p class="robux-text">You have <span id="robuxAmount">0</span> Robux!</p>
-            </div>
-            
-            <!-- Button Section -->
-            <button class="generate-btn" onclick="generateRobux()">Generate Robux</button>
-        </div>
-
-        <div class="footer">
-            <p>By using this site, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a>.</p>
-        </div>
-
-        <!-- Disclaimer Section -->
-        <div class="disclaimer">
-            <p>Disclaimer: This is a fictional Robux generator for educational purposes only. No real Robux are given.</p>
-        </div>
-    </div>
-
-    <script>
-        function generateRobux() {
-            let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux Generation
-            document.getElementById("robuxAmount").innerText = randomRobux;
+    <style>
+        /* Adding the CSS directly for now */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
         }
-    </script>
-</body>
+        header {
+            background: linear-gradient(to right, #008CBA, #00b3b3);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .robux {
+            font-size: 22px;
+            color: green;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: #00b3b3;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #008CBA;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: gray;
+            margin-top: 10px;
+        }
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .testimonial {
+            margin: 15px;
+            font-style: italic;
+        }
+        .testimonial p {
+            font-size: 18px;
+        }
+        .testimonial img {
+            width: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .faq {
+            background-color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .faq h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .faq p {
+            font-size: 18px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <h1>Robux Generator - Get Your Free Robux Now!</h1>
+</header>
+
+<div class="container">
+    <h2>Welcome to the Free Robux Generator</h2>
+    <p class="robux">Generated Robux: 0</p>
+    <button class="btn" onclick="generateRobux()">Generate Robux</button>
+    <p class="disclaimer">For educational purposes only. Results may vary.</p>
+</div>
+
+<!-- Testimonials Section -->
+<div class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+        <img src="https://via.placeholder.com/50" alt="User">
+        <p>"I got 5000 Robux in no time! Highly recommend."</p>
+        <p>- Alex, Player</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://via.placeholder.com/50" alt="User">
+        <p>"The easiest way to get free Robux. Thanks so much!"</p>
+        <p>- Jamie, Player</p>
+    </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>How does it work?</strong><br>Simply click the button to generate your free Robux instantly.</p>
+    <p><strong>Is this safe?</strong><br>Yes, this is a simulation for educational purposes.</p>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2025 Robux Generator. All rights reserved.</p>
+</footer>
+
+<script>
+    function generateRobux() {
+        let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux generation
+        document.querySelector(".robux").innerText = "Generated Robux: " + randomRobux;
+    }
+</script>
+
+</body>
 </html>
