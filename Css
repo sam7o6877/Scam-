@@ -112,7 +112,9 @@ footer p {
     .form-section {
         width: 90%;
     }
-    .form-section input, .form-section button {
+ git add .
+git commit -m "Update index.html and style.css"
+git push origin main    .form-section input, .form-section button {
         width: 100%;
     }
 }
