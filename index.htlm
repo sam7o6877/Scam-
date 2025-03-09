@@ -73,6 +73,9 @@
     <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     <p class="disclaimer">This is a simulation tool for educational purposes only. No real Robux will be added to your Roblox account.</p>
 </footer>
+git add .
+git commit -m "Set up GitHub Pages"
+git push origin main
 
 <script>
     function generateRobux() {
