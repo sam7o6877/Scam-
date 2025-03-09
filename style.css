@@ -1,64 +1,95 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    height: 100%; /* Ensure the page takes full height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Allow scrolling if content exceeds viewport */
+    min-height: 100vh;  /* Ensure the page takes full height */
+    height: 100%;  /* Allow scrolling if content exceeds viewport */
+    text-align: center;
 }
 
+/* Container Styling */
 .container {
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 90%;  /* Make container responsive */
+    max-width: 400px;  /* Limit max width for large screens */
     margin: 20px;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;  /* Prevent padding from affecting width */
 }
 
+/* Headings */
 h2 {
     color: #333;
     margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
+/* Robux Display */
 .robux {
-    font-size: 20px;
-    color: green;
-    margin: 15px 0;
+    font-size: 1.25em;
+    color: #28a745; /* Green */
+    margin: 20px 0;
 }
 
+/* Button Styling */
 .btn {
     background-color: #008CBA;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+    margin-bottom: 25px;
 }
 
 .btn:hover {
-    background-color: #005f73;
+    background-color: #005f73; /* Darker blue */
+    transform: scale(1.05);  /* Subtle hover effect */
 }
 
+/* Disclaimer Styling */
 .disclaimer {
-    font-size: 10px;
+    font-size: 0.9em;
     color: gray;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* Add some content below to make the page longer */
 .extra-content {
-    height: 1500px; /* Add height to make the page scrollable */
+    height: 1500px;
     background-color: #e0e0e0;
     margin-top: 50px;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
