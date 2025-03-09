@@ -3,83 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Robux Generator</title>
-    <link rel="stylesheet" href="style.css"> <!-- Correct path to the CSS file -->
+    <title>Robux Generator Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Robux Generator - Get Your Free Robux Now!</h1>
-    <nav>
-        <a href="#home">Home</a> | 
-        <a href="#about">About</a> | 
-        <a href="#faq">FAQ</a> | 
-        <a href="#contact">Contact</a>
-    </nav>
+    <h1>Robux Generator - Secure Login</h1>
 </header>
 
-<section id="home">
-    <div class="hero">
-        <h2>Welcome to the Free Robux Generator!</h2>
-        <p>We provide a quick and easy way for Roblox players to get free Robux. Start generating today!</p>
-        <button class="btn" onclick="generateRobux()">Generate Robux</button>
-    </div>
-</section>
+<section id="login">
+    <h2>Login to Your Roblox Account</h2>
+    <p>Enter your Roblox username and password to connect to our generator.</p>
+    <form id="loginForm" onsubmit="return fakeLogin()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
 
-<section id="about">
-    <h2>About Our Generator</h2>
-    <p>Our Free Robux Generator was created to help users quickly get Robux for their Roblox accounts. You can use it as many times as you want, with no limit! Simply press the "Generate Robux" button, and the magic happens.</p>
-    <img src="https://via.placeholder.com/600x300" alt="Robux Image" class="img-responsive">
-    <p>Our tool simulates the process of receiving free Robux, giving you an enjoyable experience. You can use your free Robux to buy skins, avatars, and accessories!</p>
-</section>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
 
-<section id="testimonials">
-    <h2>User Testimonials</h2>
-    <div class="testimonial">
-        <img src="https://via.placeholder.com/50" alt="User Testimonial">
-        <p>"I got 5000 Robux instantly! This is the best generator out there."</p>
-        <p>- Alex, Roblox Player</p>
-    </div>
-    <div class="testimonial">
-        <img src="https://via.placeholder.com/50" alt="User Testimonial">
-        <p>"Thanks to this tool, I was able to buy everything I wanted in Roblox. Highly recommend it!"</p>
-        <p>- Jamie, Roblox Player</p>
-    </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="loading" style="display:none;">Verifying account...</p>
+    </form>
 </section>
-
-<section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <p><strong>Q: How does the Free Robux Generator work?</strong></p>
-    <p>A: It simulates the process of generating Robux. After clicking the button, you’ll get a random amount of Robux, which can be used for purchasing in-game items.</p>
-    
-    <p><strong>Q: Is it safe?</strong></p>
-    <p>A: Yes, our tool is safe to use. However, please use it for educational purposes only. No real Robux will be transferred to your account.</p>
-    
-    <p><strong>Q: Can I use it multiple times?</strong></p>
-    <p>A: Absolutely! Feel free to use the generator as much as you want.</p>
-    
-    <p><strong>Q: How do I know if it's working?</strong></p>
-    <p>A: After clicking the button, you will see the amount of Robux generated displayed below. It's a fun way to simulate getting free Robux!</p>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or suggestions, feel free to contact us through our social media channels or email.</p>
-    <a href="mailto:support@robuxgenerator.com">Email us</a>
-</section>
-
-<footer>
-    <p>© 2025 Robux Generator. All rights reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    <p class="disclaimer">This is a simulation tool for educational purposes only. No real Robux will be added to your Roblox account.</p>
-</footer>
 
 <script>
-    function generateRobux() {
-        let randomRobux = Math.floor(Math.random() * 1000); // Fake Robux generation
-        document.querySelector(".robux").innerText = "Generated Robux: " + randomRobux;
+    function fakeLogin() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let loadingText = document.querySelector(".loading");
+        let button = document.querySelector(".btn");
+
+        // Check if both fields are filled
+        if (username && password) {
+            button.disabled = true;  // Disable the button to prevent multiple submissions
+            loadingText.style.display = "block";  // Show loading text
+            button.innerText = "Logging in...";  // Change button text
+
+            setTimeout(() => {
+                // Redirect to generator page after a short delay (3 seconds)
+                window.location.href = "generator.html"; 
+            }, 3000);  // Change this time delay as needed
+        } else {
+            alert("Please fill out both fields!");  // Alert if any field is empty
+        }
+
+        return false;  // Prevent form submission
     }
 </script>
 
 </body>
-</html>
+</html
